@@ -118,7 +118,22 @@ export function Navigation() {
             >
               JustDial
             </a>
-            
+             <div className="mt-2 flex gap-2 border-t border-border pt-3">
+              <Link
+                href="/login"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="flex-1 rounded-lg border border-border px-4 py-2.5 text-center text-sm transition-colors hover:bg-muted"
+              >
+                Login
+              </Link>
+              <Link
+                href="/signup"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="flex-1 rounded-lg bg-foreground px-4 py-2.5 text-center text-sm text-background transition-colors hover:bg-foreground/90"
+              >
+                Sign Up
+              </Link>
+            </div>
           </div>
         </div>
       </header>
